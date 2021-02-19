@@ -1,0 +1,120 @@
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  flex: 7% 1 1;
+  height: 8vw;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2px;
+  box-sizing: border-box;
+}
+
+.card img {
+  max-width: 30%;
+  align-self: center;
+}
+
+.card p {
+  margin: 3px;
+  font-size: 20px;
+}
+
+.card p:last-child {
+  transform: rotate(180deg);
+}
+
+.back {
+  background: url('https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png');
+  background-size: cover;
+}
+
+.paired {
+  background-color: #dae0e3;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 92%;
+  align-items: flex-end;
+}
+
+#header .title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#header .title img {
+  max-width: 3em;
+}
+
+#header .title h2 {
+  padding-left: 0.5em;
+}
+
+#header .score {
+  margin: 0;
+  color: #6c90ac;
+}
+
+#header .times {
+  margin-top: 0;
+}
+
+.wrong {
+  animation-name: wrongAnimation;
+  animation-duration: 0.2s;
+  animation-iteration-count: 5;
+}
+
+@keyframes  wrongAnimation {
+  to {
+    border: 2px solid #ffd54f;
+  }
+}
+
+.completed {
+  outline: tomato 2px solid;
+  margin: 10px auto;
+  z-index: 99;
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  top: 30vh;
+  padding: auto;
+  background-color: rgba(233, 219, 198, 0.801);
+}
+
+.completed > p:first-child {
+  font-size: xx-large;
+  font-weight: bold;
+  color: brown;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.completed > p:nth-child(2) {
+  font-size: bold;
+  color: #0952f1cb;
+  
+}
+
+.completed > p {
+  font-size: x-large;
+  color: #03615c;
+  margin: 10px auto;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+
